@@ -48,7 +48,7 @@ void MergeSort(int *list, int length, int start, int end, int *temp)
 
     int mid = (start, end)/2;
     MergeSort(list, length, start, mid, temp);
-    MergeSort(list, length, mid, end, temp);
+    MergeSort(list, length, mid+1, end, temp);
     Merge(list, start, mid, end, temp);
 }
 
